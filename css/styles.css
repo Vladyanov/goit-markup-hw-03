@@ -151,22 +151,26 @@ img {
 
 /* ============== HERO =============== */
 
-.hero, .footer {
+.hero {
+    text-align: center;
     background: var(--hero-footer-bg);
 }
 
+
+
 .hero-title {
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
 }
 
-.button {
+.hero .button {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -241,6 +245,10 @@ img {
 /* ============== /section TEAM =============== */
 
 /* ==============FOOTER =============== */
+.footer {
+    background: var(--hero-footer-bg);
+}
+
 .footer-logo {
     color: var(--primary-white-color) ;
 }
