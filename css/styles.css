@@ -53,7 +53,10 @@ img {
     display: block;
 }
 
-
+.section  {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* ============== HEADER =============== */
 .page-header {
@@ -171,12 +174,13 @@ img {
 }
 
 .hero .button {
+    padding: 10px 32px;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     border: none;
-
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
@@ -190,7 +194,21 @@ img {
 /* ============== /HERO =============== */
 
 /* ============== section особенности работы =============== */
+.features {
+    display: flex;
+}
+
+.features .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features .item {
+    flex-basis: calc(100% / 4);
+}
+
 .features-title {
+    margin-bottom: 10px;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 1.14;
@@ -205,8 +223,13 @@ img {
 }
 /* ============== /section особенности работы =============== */
 
-/* ============== section чем мы занимаемсяа =============== */
+/* ============== section WORK чем мы занимаемсяа =============== */
+.section.work {
+    padding-top: 0;
+}
+
 .title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -214,6 +237,15 @@ img {
     
     color: var(--secondary-color);
 }
+
+.work-list {
+    display: flex;
+}
+
+.work-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* ============== /section чем мы занимаемсяа =============== */
 
 /* ============== section TEAM =============== */
@@ -222,21 +254,37 @@ img {
 }
 
 .team-list {
+    display: flex;
+}
+
+.team-list .item {
     background-color: var(--primary-white-color) ;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-img {
+    margin-bottom: 30px;
 }
 
 .team-member {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    
     text-align: center;
     letter-spacing: 0.03em;
-    
     color: var(--secondary-color);
 }
 
 .team-job {
+    margin-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;
     
@@ -247,24 +295,33 @@ img {
 /* ==============FOOTER =============== */
 .footer {
     background: var(--hero-footer-bg);
+    padding: 60px 0;
 }
 
 .footer-logo {
+    display: block;
+    margin-bottom: 30px;
+
     color: var(--primary-white-color) ;
 }
 
-.address .text-address {
+.text-address {
     font-style: normal;
 
     color: var(--primary-white-color);
 }
 
-.address .footer-contacts {
+.footer-contacts {
+    display: block;
     text-decoration: none;
     font-style: normal;
     line-height: 1.71;
     
     color: var(--address-color);
+}
+
+.address-list .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 /* ============== /FOOTER =============== */
 
