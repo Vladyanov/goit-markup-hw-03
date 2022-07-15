@@ -170,6 +170,8 @@ img {
     text-align: center;
     background: var(--hero-footer-bg);
     padding: 200px 0;
+    width: 1600px;
+    margin-inline: auto;
 }
 
 
